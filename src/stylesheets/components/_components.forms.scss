@@ -1,0 +1,25 @@
+.searchForm {
+  margin: 0 auto;
+
+  @media all and (min-width: 500px) {
+    margin: initial;
+  }
+}
+
+.searchForm__content {
+  width: 270px;
+  height: $sizeThirty;
+  background-color: $greyBasic;
+  border-radius: 15px;
+  @include flex-row-vertically-centered;
+  padding-right: $sizeFourteen;
+
+  &.focus {
+    box-shadow: 0 0 4px 1px rgba(62, 62, 64, 0.5);
+  }
+}
+
+.searchForm__icon {
+  height: 19px;
+  margin: 0 $sizeTwelve 0 $sizeTen;
+}

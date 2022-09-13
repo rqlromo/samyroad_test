@@ -1,0 +1,13 @@
+.searchForm__input {
+  width: 240px;
+  height: $sizeThirty;
+  background-color: transparent;
+  color: $greyDark;
+  font-size: $sizeSixteen;
+
+  &::placeholder {
+    font-size: $sizeSixteen;
+    line-height: $sizeTwenty;
+    color: $greySoft;
+  }
+}

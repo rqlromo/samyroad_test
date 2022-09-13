@@ -1,0 +1,28 @@
+.like {
+  padding-top: $sizeTwenty;
+  padding-right: $sizeTwenty;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.like__icon {
+  cursor: pointer;
+  @include flex-row-total-centered;
+  width: $sizeThirtySix;
+  height: $sizeThirtySix;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+  margin-bottom: $sizeFour;
+
+  &.like__icon_liked {
+    background-color: $mint;
+  }
+}
+
+.like__counter {
+  color: white;
+  text-align: center;
+  font-family: $fontOpenSansSemiBold;
+  font-size: 18px;
+}

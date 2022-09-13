@@ -1,0 +1,40 @@
+// flex
+@mixin flex-column-total-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-total-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-horizontal-centered {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-row-vertically-centered {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column-horizontal-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// @flex
+
+// position
+@mixin absolute ($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+// @position

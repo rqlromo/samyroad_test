@@ -1,0 +1,55 @@
+/* ==========================================================================
+   #CORE
+   ========================================================================== */
+// Table of Contents:
+//
+//  1. #COLORS
+//  2. #FONTS
+//  3. #SIZES
+//  4. #INDEX
+
+
+/************************************************************
+ * 1. #COLORS
+ ************************************************************/
+
+  $greyDark           : #3E3E40;
+  $greySoft           : #B6B6B4;
+  $greyBasic          : #F6F6F6;
+
+
+  $mint               : #83F3C6;
+
+/************************************************************
+ * 2. #FONTS
+ ************************************************************/
+
+ $fontOpenSansRegular: 'OpenSans-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ $fontOpenSansSemiBold: 'OpenSans-SemiBold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ $fontOpenSansBold: 'OpenSans-Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+/************************************************************
+ * 3. #SIZES
+ ************************************************************/
+$sizeFour           : 4px;
+$sizeEight          : 8px;
+$sizeTen            : 10px;
+$sizeTwelve         : 12px;
+$sizeFourteen       : 14px;
+$sizeSixteen        : 16px;
+$sizeTwenty         : 20px;
+$sizeTwentyFour     : 24px;
+$sizeThirty         : 30px;
+$sizeThirtySix      : 36px;
+$sizeFourtyEight    : 48px;
+
+
+
+/************************************************************
+ * 5. #Z-INDEX
+ ************************************************************/
+  $zIndexBack: -10;
+  $zIndexNormal: 1;
+  $zIndexTooltip: 10;
+  $zIndexFixed: 100;
+  $zIndexModal: 1000;
