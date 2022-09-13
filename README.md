@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pasos para descargar y arrancar el proyecto
 
-## Available Scripts
+### Primero clonamos el proyecto `git clone`
 
-In the project directory, you can run:
+Primero clonamos el proyecto en la carpeta que deseemos:
+git clone [https://github.com/rqlromo/samyroad-test.git](https://github.com/rqlromo/samyroad-test.git).
 
-### `npm start`
+### Despues realizamos `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Entramos en la carpeta del proyecto que acabamos de clonar y hacemos un `npm install` para que se instale el proyecto con todas sus dependencias.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### A continuación arrancamos el json-Server con `npm run json:server`
 
-### `npm test`
+Una vez instalado arrancamos nuestro json server para poder simular el comportamiento de la api, con el comando `npm run json:server`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Por ultimo arrancamos el proyecto con `npm start`
 
-### `npm run build`
+Para arrancar el proyecto hacemos `npm start`, esto nos arrancara nuestro proyecto en el puerto 3006.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Lanzar test con `npm test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para poder lanzar los test que comprueban el buen funcionamiento de la aplicación ejecutaremos `npm test`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Explicación del proyecto
 
-### `npm run eject`
+En este proyecto lo que se ha hecho es recoger los datos de un endpoint que se ha simulado con json-server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Estos datos se recogen y se pintan segun el diseño proporcionado, el diseño es responsive según especificaciones.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Cuando cargamos las imagenes, solo cargamos las 5 primeras hasta que llegamos al final de la página y se pintan las 5 siguientes, esto es posible gracias a un scroll infinito que detecta cuando hemos llegado al final de la página y hace otra petición al servidor para que nos traiga las 5 siguientes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+En esta visualización de las imágenes podemos dar a "me gusta" a las imagenes que mas nos gusten y si no nos gustan podemos quitarle el like, tambien se actualiza el contador de likes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ademas tenemos un buscador que filtra las imagenes por titulo y por autor.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
